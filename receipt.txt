@@ -1,0 +1,45 @@
+Mark 1000
+              Previous Balance         $400.5
+4575        Payment              3
+4899        Payment            1.5
+3456        Monitor            130
+8592      Powerunit             80
+4959        Payment             90
+
+                   Balance Due         $516
+John 1001
+              Previous Balance         $542.75
+8575        Payment           5.75
+7542            CPU         149.99
+5789           Mice          29.99
+8654    Motherboard            100
+8494        Payment             50
+
+                   Balance Due         $772.73
+Kate 1002
+              Previous Balance         $75.5
+7456    Screwdriver              3
+5984        Payment             50
+3598           Case             60
+8129        Payment             30
+1234         Hammer            7.5
+
+                   Balance Due         $70.5
+Jonnathan 1003
+              Previous Balance         $106
+5687       Keyboard             20
+9853         Router          89.99
+6358         Laptop         699.99
+4577        Payment            500
+3747        Payment            100
+
+                   Balance Due         $295.98
+Laura 1004
+              Previous Balance         $40
+8956        Headset          59.99
+5648         Screws              5
+6743        Payment             30
+7987           Pens           6.99
+5396        Payment             15
+
+                   Balance Due         $6.99

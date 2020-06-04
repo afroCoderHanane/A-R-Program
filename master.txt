@@ -1,5 +1,5 @@
-1000	Mark	    4.50
-1001	John	    5.75
+1000	Mark	    400.50
+1001	John	    542.75
 1002	Kate	    75.50
-1003	Jonnathan	10.00
-1004	Laura	     4.00
+1003	Jonnathan	106.00
+1004	Laura	     40.00
