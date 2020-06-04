@@ -5,48 +5,29 @@
 #include <fstream>
 #include <cstring>
 #include <iomanip>
-
+#include"Structures/MasterData.cpp"
 using namespace std;
-struct Master
-{   
-    int index;
-    int custId;
-    string name;
-    double balance;
-    double finalBal;
-};
-struct Transaction
-{
-    int custId;
-    int qty;
-    double orderprice;
-    double amountpay;
-    char type;
-    string orderName;
-    int orderId;
 
-};
 
 int main() {
     
     //declares variabes 
-    double totalDue;
-    double totalPaid;
-  
+    int index = 0;
+    int j = 0;
     //declare structures
     
     Master mRecord[5];
     Transaction tRecord[25];
     
-    int index = 0;
-    int msize =0;
+    
+    
 
     ifstream min,tin;
-    min.open("master.txt", ios::in);
-    tin.open("transaction.txt", ios::in);
+    min.open("Data/master.txt", ios::in);
+    tin.open("Data/transaction.txt", ios::in);
 
     ofstream fout;
-    fout.open("receipt.txt");
+    fout.open("Receipt/receipt.txt", ios::out);
     
     if(!min)
     {
@@ -94,9 +75,12 @@ int main() {
     
    
     //print the record 
-    int j = 0;
+    
     for(int i=0; i<5;i++)
-    {
+    { 
+       fout<<  "*************************************************************"<<endl
+          <<setw(50)<<  "ABC Company-A/R program version 1.0 "<<setw(30)<<endl
+          <<"*************************************************************"<<endl;
       fout<< mRecord[i].name<<" "<<mRecord[i].custId<<endl
       <<setw(30)<<"Previous Balance"<<setw(10)<<"$"<<mRecord[i].balance
       <<endl;
@@ -104,10 +88,10 @@ int main() {
       while(mRecord[i].custId==tRecord[j].custId)
       {
         if(tRecord[j].type=='P')
-           fout<<tRecord[j].orderId<<setw(15)<<"Payment"<<setw(15)<<tRecord[j].amountpay<<endl;
+           fout<<tRecord[j].orderId<<setw(15)<<"Payment"<<setw(25)<<"$"<<tRecord[j].amountpay<<endl;
         else if(tRecord[j].type=='O')
         {
-          fout<<tRecord[j].orderId<<setw(15)<<tRecord[j].orderName<<setw(15)<<tRecord[j].orderprice<<endl;
+          fout<<tRecord[j].orderId<<setw(15)<<tRecord[j].orderName<<setw(25)<<"$"<<tRecord[j].orderprice<<endl;
         }
         j++;
       }
@@ -115,12 +99,21 @@ int main() {
      fout<<setw(30)<<" Balance Due"<<setw(10)<<"$"<<mRecord[i].finalBal
       <<endl;
     }
-    
-    
+      
   fout.close();
   min.close();
   tin.close();
+  ofstream mout;
+  mout.open("Data/master.txt", ios::out);
   
+          
+   for(int i=0; i<5;i++)
+    { 
+      
+      mout<<mRecord[i].custId<<setw(10)<<mRecord[i].name<<setw(10)<<mRecord[i].finalBal<<endl;
+    }
+  mout.close();
+  cout<<"Processed Successfully, exit with code '0'"<<endl;
    return 0; 
 }
 

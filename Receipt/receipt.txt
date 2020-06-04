@@ -1,0 +1,60 @@
+*************************************************************
+              ABC Company-A/R program version 1.0 
+*************************************************************
+Mark 1000
+              Previous Balance         $235.5
+4575        Payment                        $3
+4899        Payment                        $1.5
+3456        Monitor                        $130
+8592      Powerunit                        $80
+4959        Payment                        $90
+
+                   Balance Due         $351
+*************************************************************
+              ABC Company-A/R program version 1.0 
+*************************************************************
+John 1001
+              Previous Balance         $465.71
+8575        Payment                        $5.75
+7542            CPU                        $149.99
+5789           Mice                        $29.99
+8654    Motherboard                        $100
+8494        Payment                        $50
+
+                   Balance Due         $695.69
+*************************************************************
+              ABC Company-A/R program version 1.0 
+*************************************************************
+Kate 1002
+              Previous Balance         $65.5
+7456    Screwdriver                        $3
+5984        Payment                        $50
+3598           Case                        $60
+8129        Payment                        $30
+1234         Hammer                        $7.5
+
+                   Balance Due         $60.5
+*************************************************************
+              ABC Company-A/R program version 1.0 
+*************************************************************
+Jonnathan 1003
+              Previous Balance         $389.96
+5687       Keyboard                        $20
+9853         Router                        $89.99
+6358         Laptop                        $699.99
+4577        Payment                        $500
+3747        Payment                        $100
+
+                   Balance Due         $579.94
+*************************************************************
+              ABC Company-A/R program version 1.0 
+*************************************************************
+Laura 1004
+              Previous Balance         $-26.02
+8956        Headset                        $59.99
+5648         Screws                        $5
+6743        Payment                        $30
+7987           Pens                        $6.99
+5396        Payment                        $15
+
+                   Balance Due         $-59.03
