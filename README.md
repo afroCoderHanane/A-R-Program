@@ -27,31 +27,13 @@ amount and add it to the balance due. If the record contains a “P” in Column
 1 subtract the payment from the balance due. Keep a running total of the
 A/R Balance of ABC Company (that is the sum of the balances due for each
 customer).
+## Sample Output 
+* Customer Name Customer Number
 
-CIS 3130 Moshe Lowenthal
-
-HW Assignment #1
-
-Your program should
-Check for errors such as duplicate master records or records in the
-transaction file with a customer number that does not appear in the master
-file.
-After processing a master record and all its transaction records prepare an
-invoice for each customer which lists on top the customer name and number,
-a line depicting the previous balance (the original balance in the master
-record before any transactions) followed by the transactions and the a
-balance due.
-It should look like this
-Customer Name Customer Number
-
-Previous Balance $xxxxxxxxxx.xx
-transaction number item ordered order amount
-transaction number item ordered order amount
-transaction number payment payment amount
-transaction number item ordered order amount
+* Previous Balance $xxxxxxxxxx.xx
+* transaction number item ordered order amount
+* transaction number item ordered order amount
+* transaction number payment payment amount
+* transaction number item ordered order amount
 
 Balance Due $xxxxxxxxx.xx
-
-Don’t forget payments reduce balances orders increase balances. You are to
-create your own data using at least 7 to 10 customers with an average of 4 to
-5 transactions each.
